@@ -176,17 +176,17 @@ Patel Power Laundry
 <section>
 <h2>Book Pickup Online 📦</h2>
 
-<form>
+<form onsubmit="sendToWhatsApp(); return false;">
 <label>Name</label>
-<input type="text" placeholder="Enter your name">
+<input type="text" id="name" placeholder="Enter your name" required>
 
 <label>Mobile Number</label>
-<input type="tel" placeholder="Enter your number">
+<input type="tel" id="mobile" placeholder="Enter your number" required>
 
 <label>Address</label>
-<textarea placeholder="Enter pickup address"></textarea>
+<textarea id="address" placeholder="Enter pickup address" required></textarea>
 
-<button type="submit">Submit Request</button>
+<button type="submit">Send Pickup Request</button>
 </form>
 
 </section>
@@ -194,11 +194,14 @@ Patel Power Laundry
 <section>
 <h2>Find Us on Map 🗺</h2>
 
+<section>
+<h2>Find Us on Map 🗺</h2>
+
 <iframe 
-src="https://www.google.com/maps?q=Piplod,Surat&output=embed" 
+src="https://www.google.com/maps?q=Patel+Power+Laundry+Piplod+Surat&output=embed" 
 width="90%" 
-height="300" 
-style="border:0;" 
+height="350" 
+style="border:0; border-radius:10px;"
 allowfullscreen="" 
 loading="lazy">
 </iframe>
@@ -208,6 +211,24 @@ loading="lazy">
 <footer>
 © 2026 Patel Power Laundry | All Rights Reserved
 </footer>
+
+<script>
+function sendToWhatsApp() {
+
+var name = document.getElementById("name").value;
+var mobile = document.getElementById("mobile").value;
+var address = document.getElementById("address").value;
+
+var message = "New Pickup Request:%0A"
++ "Name: " + name + "%0A"
++ "Mobile: " + mobile + "%0A"
++ "Address: " + address;
+
+var whatsappURL = "https://wa.me/919773086046?text=" + message;
+
+window.open(whatsappURL, "_blank");
+}
+</script>
 
 </body>
 </html>
