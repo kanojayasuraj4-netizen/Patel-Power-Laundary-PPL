@@ -2,33 +2,114 @@
 <html>
 <head>
 <title>Patel Power Laundry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
-font-family: Arial;
+font-family: 'Segoe UI', sans-serif;
 margin: 0;
 padding: 0;
-background-color: #f4f4f4;
-text-align: center;
+background: #f4f7fc;
 }
 
 header {
-background: #007bff;
+background: linear-gradient(45deg,#007bff,#00c6ff);
 color: white;
 padding: 20px;
-font-size: 30px;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+from {opacity:0;}
+to {opacity:1;}
 }
 
 section {
+padding: 40px 20px;
+text-align: center;
+}
+
+h2 {
+color: #007bff;
+margin-bottom: 20px;
+}
+
+.price-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.price-card {
+background: white;
+width: 280px;
 padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.price-card h3 {
+background: #007bff;
+color: white;
+padding: 10px;
+border-radius: 6px;
+}
+
+.price-card ul {
+list-style: none;
+padding: 0;
+text-align: left;
+}
+
+.price-card ul li {
+padding: 6px 0;
+border-bottom: 1px solid #eee;
+}
+
+.review-box {
+background: white;
+max-width: 600px;
+margin: 10px auto;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+form {
+max-width: 500px;
+margin: auto;
+text-align: left;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
 }
 
 button {
 background: green;
 color: white;
-padding: 10px 20px;
+padding: 12px 20px;
 border: none;
-font-size: 18px;
+border-radius: 5px;
+font-size: 16px;
 cursor: pointer;
+margin-top: 10px;
+}
+
+footer {
+background: #007bff;
+color: white;
+padding: 15px;
+text-align: center;
+margin-top: 40px;
 }
 </style>
 </head>
@@ -36,24 +117,97 @@ cursor: pointer;
 <body>
 
 <header>
-Patel Power Laundry
+Patel Power Laundry  
+📞 9773086046  
+📍 Piplod, Surat
 </header>
 
 <section>
-<h2>Our Services</h2>
-<p>✔ Dry Cleaning</p>
-<p>✔ Steam Ironing</p>
-<p>✔ Washing & Folding</p>
+<h2>Premium Price List</h2>
 
-<h2>Contact Us</h2>
-<p>📞 9773086046</p>
-<p>📍 Piplod, Surat</p>
+<div class="price-container">
 
-<a href="https://wa.me/919773086046">
-<button>Book on WhatsApp</button>
-</a>
+<div class="price-card">
+<h3>Regular Wear</h3>
+<ul>
+<li>Shirt – ₹15</li>
+<li>Trouser – ₹15</li>
+<li>Kurta – ₹15</li>
+<li>Blouse – ₹10</li>
+</ul>
+</div>
+
+<div class="price-card">
+<h3>Winter Wear</h3>
+<ul>
+<li>Jacket – ₹80</li>
+<li>Coat – ₹100</li>
+<li>Blazer – ₹120</li>
+</ul>
+</div>
+
+<div class="price-card">
+<h3>Home Items</h3>
+<ul>
+<li>Bedsheet – ₹60</li>
+<li>Blanket – ₹120</li>
+<li>Curtain – ₹50</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Customer Reviews ⭐</h2>
+
+<div class="review-box">
+<strong>Ramesh Patel</strong><br>
+"Very fast service and affordable price!"
+</div>
+
+<div class="review-box">
+<strong>Neha Sharma</strong><br>
+"Best laundry service in Piplod area."
+</div>
 
 </section>
+
+<section>
+<h2>Book Pickup Online 📦</h2>
+
+<form>
+<label>Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter your number">
+
+<label>Address</label>
+<textarea placeholder="Enter pickup address"></textarea>
+
+<button type="submit">Submit Request</button>
+</form>
+
+</section>
+
+<section>
+<h2>Find Us on Map 🗺</h2>
+
+<iframe 
+src="https://www.google.com/maps?q=Piplod,Surat&output=embed" 
+width="90%" 
+height="300" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+
+</section>
+
+<footer>
+© 2026 Patel Power Laundry | All Rights Reserved
+</footer>
 
 </body>
 </html>
