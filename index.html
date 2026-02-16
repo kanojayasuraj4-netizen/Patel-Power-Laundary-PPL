@@ -250,9 +250,10 @@ body{
     <p>Validity 12 Months</p>
     <p>500 Clothes • ₹15/Cloth</p>
     <br>
-    <a href="https://wa.me/919773086046" target="_blank">
-      <button class="btn-modern">Choose Plan</button>
-    </a>
+    <a href="https://wa.me/919773086046?text=Hello%20Patel%20Power%20Laundry,%0A%0AI%20want%20to%20book%20the%20SINGLE%20PACK.%0APrice:%20₹7,500%0AValidity:%2012%20Months%0A500%20Clothes%20(₹15/Cloth)%0A%0APlease%20confirm%20my%20booking."
+target="_blank">
+<button class="btn">Choose Plan</button>
+</a>
   </div>
 
   <div class="card">
@@ -262,9 +263,10 @@ body{
     <p>Validity 12 Months</p>
     <p>1,000 Clothes • ₹14/Cloth</p>
     <br>
-    <a href="https://wa.me/919773086046" target="_blank">
-      <button class="btn-modern">Choose Plan</button>
-    </a>
+     <a href="https://wa.me/919773086046?text=Hello%20Patel%20Power%20Laundry,%0A%0AI%20want%20to%20book%20the%20DUAL%20PACK.%0APrice:%20₹14,000%0AValidity:%2012%20Months%0A1,000%20Clothes%20(₹14/Cloth)%0A%0APlease%20confirm%20my%20booking."
+target="_blank">
+<button class="btn">Choose Plan</button>
+</a>
   </div>
 
   <div class="card">
@@ -274,9 +276,10 @@ body{
     <p>Validity 12 Months</p>
     <p>3,000 Clothes • ₹13/Cloth</p>
     <br>
-    <a href="https://wa.me/919773086046" target="_blank">
-      <button class="btn-modern">Choose Plan</button>
-    </a>
+   <a href="https://wa.me/919773086046?text=Hello%20Patel%20Power%20Laundry,%0A%0AI%20want%20to%20book%20the%20FULL%20HOUSE%20PACK.%0APrice:%20₹39,000%0AValidity:%2012%20Months%0A3,000%20Clothes%20(₹13/Cloth)%0A%0APlease%20confirm%20my%20booking."
+target="_blank">
+<button class="btn">Choose Plan</button>
+</a>
   </div>
 
 </div>
@@ -332,6 +335,10 @@ function sendToWhatsApp(){
 var name=document.getElementById("name").value;
 var mobile=document.getElementById("mobile").value;
 var address=document.getElementById("address").value;
+var flatno=document.getElementById("flat no").value;
+var roomno=document.getElementById("room no").value;
+var description=document.getElementById("description").value;
+
 
 var msg="New Pickup Request:%0AName: "+name+"%0AMobile: "+mobile+"%0AAddress: "+address;
 window.open("https://wa.me/919773086046?text="+msg,"_blank");
@@ -340,5 +347,6 @@ window.open("https://wa.me/919773086046?text="+msg,"_blank");
 
 </body>
 </html>
+
 
 
