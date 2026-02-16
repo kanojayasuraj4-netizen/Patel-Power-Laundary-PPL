@@ -315,6 +315,15 @@ target="_blank">
 <label>Address</label>
 <textarea id="address" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
 
+<label>Flat No</label>
+<input type="text" id="flat" required style="width:100%;padding:8px;margin:5px 0;">
+
+<label>Room No</label>
+<input type="text" id="room" required style="width:100%;padding:8px;margin:5px 0;">
+
+<label>Description</label>
+<textarea id="description" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
+
 <button class="btn" type="submit">Send Request</button>
 </form>
 </section>
@@ -332,21 +341,34 @@ src="https://www.google.com/maps?q=Patel+Power+Laundry+Piplod+Surat&output=embed
 
 <script>
 function sendToWhatsApp(){
+
 var name=document.getElementById("name").value;
 var mobile=document.getElementById("mobile").value;
 var address=document.getElementById("address").value;
-var flatno=document.getElementById("flat no").value;
-var roomno=document.getElementById("room no").value;
+var flat=document.getElementById("flat").value;
+var room=document.getElementById("room").value;
 var description=document.getElementById("description").value;
 
+if(name=="" || mobile=="" || address=="" || flat=="" || room=="" || description==""){
+alert("Please fill all details");
+return;
+}
 
-var msg="New Pickup Request:%0AName: "+name+"%0AMobile: "+mobile+"%0AAddress: "+address;
+var msg="📦 New Pickup Request:%0A%0A"+
+"Name: "+name+
+"%0AMobile: "+mobile+
+"%0AAddress: "+address+
+"%0AFlat No: "+flat+
+"%0ARoom No: "+room+
+"%0ADescription: "+description;
+
 window.open("https://wa.me/919773086046?text="+msg,"_blank");
 }
 </script>
 
 </body>
 </html>
+
 
 
 
