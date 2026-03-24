@@ -359,27 +359,43 @@ body{
 <section>
 <h2>Book Pickup Online</h2>
 
-<form onsubmit="sendToWhatsApp(); return false;" style="max-width:400px;margin:auto;text-align:left;">
-<label>Name</label>
-<input type="text" id="name" required style="width:100%;padding:8px;margin:5px 0;">
+<!-- 🔥 PROFESSIONAL BOOKING SECTION -->
+<section style="background:linear-gradient(135deg,#e3f2fd,#ffffff);padding:60px 20px;">
 
-<label>Mobile</label>
-<input type="tel" id="mobile" required style="width:100%;padding:8px;margin:5px 0;">
+<h2 style="color:#0d6efd;">📦 Book Pickup Online</h2>
 
-<label>Address</label>
-<textarea id="address" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
+<div style="max-width:420px;margin:auto;background:white;padding:25px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
 
-<label>Flat No</label>
-<input type="text" id="flat" required style="width:100%;padding:8px;margin:5px 0;">
+<form onsubmit="sendToWhatsApp(); return false;">
 
-<label>Room No</label>
-<input type="text" id="room" required style="width:100%;padding:8px;margin:5px 0;">
+<input type="text" id="name" placeholder="👤 Full Name" required 
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ddd;">
 
-<label>Description</label>
-<textarea id="description" required style="width:100%;padding:8px;margin:5px 0;"></textarea>
+<input type="tel" id="mobile" placeholder="📱 Mobile Number" required 
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ddd;">
 
-<button class="btn" type="submit">Send Request</button>
+<textarea id="address" placeholder="📍 Full Address" required 
+style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ddd;"></textarea>
+
+<div style="display:flex;gap:10px;">
+<input type="text" id="flat" placeholder="Flat No" required 
+style="flex:1;padding:12px;border-radius:8px;border:1px solid #ddd;">
+
+<input type="text" id="room" placeholder="Room No" required 
+style="flex:1;padding:12px;border-radius:8px;border:1px solid #ddd;">
+</div>
+
+<textarea id="description" placeholder="🧺 Clothes Details (Ex: 5 Shirts, 2 Jeans)" required 
+style="width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #ddd;"></textarea>
+
+<button type="submit" style="width:100%;padding:14px;background:#25D366;border:none;border-radius:30px;color:white;font-size:16px;font-weight:600;">
+🚀 Confirm Pickup
+</button>
+
 </form>
+
+</div>
+
 </section>
 
 <section class="map">
